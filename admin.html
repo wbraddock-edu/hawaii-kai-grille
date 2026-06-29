@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin | Kai Grille — Wailuku, Maui</title>
+  <meta name="description" content="Kai Grille offers coastal fine-casual dining in Wailuku, Maui. Fresh Hawaiian seafood, farm-to-table ingredients, and warm island hospitality.">
+  <meta property="og:title" content="Admin | Kai Grille">
+  <meta property="og:description" content="Fresh from the islands, straight to your table. Coastal fine-casual dining in Wailuku, Maui.">
+  <meta property="og:image" content="https://picsum.photos/1200/630?random=1">
+  <meta property="og:type" content="restaurant">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>🌊</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Kai Grille",
+    "description": "Coastal fine-casual dining in Wailuku, Maui. Fresh Hawaiian seafood and farm-to-table cuisine.",
+    "url": "https://kaigrille.com",
+    "telephone": "(808) 555-0101",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "145 Market Street",
+      "addressLocality": "Wailuku",
+      "addressRegion": "HI",
+      "postalCode": "96793",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 20.8953,
+      "longitude": -156.5076
+    },
+    "openingHours": ["Mo-Th 11:00-21:00","Fr-Sa 11:00-22:00","Su 10:00-20:00"],
+    "servesCuisine": "Hawaiian, Seafood",
+    "priceRange": "$$",
+    "image": "https://picsum.photos/800/600?random=1"
+  }
+  </script>
+</head>
+<body class="page-wrapper">
+<body>
+  <div class="admin-login" id="adminLogin">
+    <div class="admin-login-box">
+      <div class="admin-login-logo">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="48" height="48" style="margin:0 auto;display:block;color:var(--primary)">
+          <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+          <path d="M12 20 Q16 12 20 20 Q24 28 28 20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+          <circle cx="20" cy="20" r="3" fill="currentColor"/>
+        </svg>
+        <h2 style="margin-top:16px;font-size:1.4rem">Kai Grille Admin</h2>
+        <p style="font-size:0.875rem;color:var(--text-light);margin-top:8px">Sign in to manage bookings and inquiries</p>
+      </div>
+      <form id="adminLoginForm">
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" id="adminPassword" placeholder="Enter admin password" required>
+        </div>
+        <div id="adminError" style="color:#E74C3C;font-size:0.875rem;margin-bottom:12px"></div>
+        <button type="submit" class="btn btn-primary" style="width:100%">Sign In</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="admin-panel" id="adminPanel">
+    <div class="admin-header">
+      <div style="display:flex;align-items:center;gap:12px;color:#fff;font-family:var(--font-display);font-size:1.1rem">
+        <svg viewBox="0 0 40 40" fill="none" width="32" height="32"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/><path d="M12 20 Q16 12 20 20 Q24 28 28 20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none"/><circle cx="20" cy="20" r="3" fill="currentColor"/></svg>
+        Kai Grille Admin
+      </div>
+      <div style="display:flex;gap:12px">
+        <a href="index.html" style="color:rgba(255,255,255,0.7);font-size:0.875rem">View Site</a>
+        <button onclick="document.querySelector('.admin-panel').style.display='none';document.querySelector('.admin-login').style.display='flex'" style="color:rgba(255,255,255,0.7);font-size:0.875rem;cursor:pointer;background:none;border:none">Sign Out</button>
+      </div>
+    </div>
+    <div class="admin-content">
+      <h2 style="margin-bottom:24px">Dashboard Overview</h2>
+      <div class="stats-grid">
+        <div class="stat-card"><div class="stat-value">24</div><div class="stat-label">Bookings This Week</div></div>
+        <div class="stat-card"><div class="stat-value">6</div><div class="stat-label">Pending Confirmation</div></div>
+        <div class="stat-card"><div class="stat-value">$8,420</div><div class="stat-label">Est. Weekly Revenue</div></div>
+        <div class="stat-card"><div class="stat-value">12</div><div class="stat-label">New Inquiries</div></div>
+      </div>
+
+      <div class="admin-section">
+        <div class="admin-section-title">Pending Reservations</div>
+        <table class="admin-table">
+          <thead><tr><th>Guest</th><th>Date</th><th>Time</th><th>Party</th><th>Occasion</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>Sarah Mitchell</td><td>Jun 29</td><td>6:00 PM</td><td>2</td><td>Anniversary</td><td><span class="badge badge-pending">Pending</span></td></tr>
+            <tr><td>James Kahananui</td><td>Jun 29</td><td>7:00 PM</td><td>4</td><td>Birthday</td><td><span class="badge badge-confirmed">Confirmed</span></td></tr>
+            <tr><td>Maya Torres</td><td>Jun 30</td><td>6:30 PM</td><td>2</td><td>Date Night</td><td><span class="badge badge-pending">Pending</span></td></tr>
+            <tr><td>Robert Lund</td><td>Jun 30</td><td>5:00 PM</td><td>6</td><td>Family Dinner</td><td><span class="badge badge-confirmed">Confirmed</span></td></tr>
+            <tr><td>Amanda Patel</td><td>Jul 1</td><td>7:30 PM</td><td>3</td><td>Just Visiting</td><td><span class="badge badge-pending">Pending</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="admin-section">
+        <div class="admin-section-title">Recent Inquiries</div>
+        <table class="admin-table">
+          <thead><tr><th>Name</th><th>Email</th><th>Subject</th><th>Received</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>David Chen</td><td>dchen@example.com</td><td>Private event inquiry</td><td>Jun 28</td><td><span class="badge badge-new">New</span></td></tr>
+            <tr><td>Lisa Wong</td><td>lwong@example.com</td><td>Large group booking 10+</td><td>Jun 27</td><td><span class="badge badge-new">New</span></td></tr>
+            <tr><td>Tom Richardson</td><td>tr@example.com</td><td>Allergy question</td><td>Jun 26</td><td><span class="badge badge-confirmed">Replied</span></td></tr>
+            <tr><td>Nani Akana</td><td>nani@example.com</td><td>Catering inquiry</td><td>Jun 25</td><td><span class="badge badge-confirmed">Replied</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
+
+  <!-- Powered by Design Holistically -->
+  <footer style="background:#111;color:#aaa;text-align:center;padding:1.5rem;font-size:0.85rem;font-family:sans-serif;">
+    <p>&copy; 2024. Powered by <a href="https://designholistically.com" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline;">Design Holistically</a>. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
