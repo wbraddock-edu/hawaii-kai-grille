@@ -706,3 +706,8 @@ p { font-size: 1rem; color: var(--text-light); max-width: 68ch; }
 }
 .award-badge .award-icon { font-size: 1.8rem; margin-bottom: 8px; }
 .award-badge p { font-size: 0.75rem; color: var(--text-light); }
+
+.hero h1, .hero p, .hero-content, .hero .eyebrow-label, .hero .tag { color: #fff !important; }
+
+[data-theme="dark"] .hero { background: transparent !important; }
+[data-theme="dark"] .hero-bg img { opacity: 1 !important; }
