@@ -219,7 +219,7 @@ p { font-size: 1rem; color: var(--text-light); max-width: 68ch; }
 }
 .hero-bg {
   position: absolute; inset: 0;
-  background-image: url('https://picsum.photos/1400/900?random=1');
+  background-image: url('../images/hero.png');
   background-size: cover; background-position: center;
 }
 .hero-overlay {
